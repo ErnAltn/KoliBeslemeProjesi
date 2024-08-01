@@ -1,0 +1,28 @@
+<header>
+    <div class="navbar navbar-expand-sm bg-success navbar-dark">
+        <div class="container">
+            <a href="{% url 'index' %}" class="navbar-brand"> Koli Sipariş Web Sitesi</a>
+            <ul class="navbar-nav mr-auto">
+                <li
+                    {% if request.path == '/' %}
+                        class = "nav-item active"
+                    {% else %}
+                        class = "nav-item"
+                    {% endif %}
+
+                >
+                    <a href="{% url 'index' %}" class="nav-link">Ana Sayfa</a>
+                </li>
+                <li
+                    {%if 'hakkinda' in request.path %}
+                        class="nav-item active"
+                    {% else %}
+                        class="nav-item"
+                    {% endif %}
+                >
+                    <a href="{% url 'hakkinda' %}" class="nav-link">Hakkında</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

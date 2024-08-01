@@ -1,0 +1,33 @@
+{% extends 'duzen.html' %}
+
+{% block content %}
+
+{% load static %}
+    <div class="title">
+
+        <h1>Ana Sayfa</h1>
+
+    </div>
+
+    <hr class="separator separator--line" />
+
+    <div style="width: 1010px; height: 500px;" class="bg-light shador shadow-lg">
+
+        <div class="d-inline-block">
+
+            <a href="{url 'koliListeleme' %}" class="nav-link"> <button style="width: 300px; height: 300px;" class="btn btn-outline-success text-dark m-3"> Sipariş İşlemleri</button></a>
+
+        </div>
+        <div class="d-inline-block">
+
+            <a href="{url 'koliListeleme' %}" class="nav-link"> <button style="width: 300px; height: 300px;" class="btn btn-outline-success text-dark m-3"> Koli Detayları</button></a>
+
+        </div>
+        <div class="d-inline-block">
+
+            <a href="{url 'koliListeleme' %}" class="nav-link"> <button style="width: 300px; height: 300px;" class="btn btn-outline-success text-dark m-3"> Stok Durumu</button></a>
+
+        </div>
+
+    </div>
+{% endblock %}
